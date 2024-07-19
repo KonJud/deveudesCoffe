@@ -90,13 +90,11 @@ const Services = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ amount: 0.8 }}
-            className='grid xs:grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8'
+            className='grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8'
         >
             {servicesData.map((service) => (
                 <motion.div 
                     variants={cardVariants}
-                    initial="hidden"
-                whileInView={"visible"}
                     className='text-center p-4 space-y-6'
                 >
                     <img 
